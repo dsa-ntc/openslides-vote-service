@@ -756,6 +756,10 @@ func validate(poll dsfetch.Poll, v ballotValue) string {
 			return "Your vote has a wrong format"
 		}
 
+	case "STV":
+		// Add validation
+		return voteIsValid
+
 	default:
 		return "Your vote has a wrong format"
 	}
